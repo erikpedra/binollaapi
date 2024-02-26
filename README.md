@@ -13,7 +13,7 @@ Binolla     : https://www.youtube.com/channel/UCCqnm8XHUoc0Ude78RJwmoA
 
 ### Import
 ```python
-from binollapi import Binoll
+from binollapi import Binolla
 ```
 ### Login by ssid
 if connect sucess return True,None  
