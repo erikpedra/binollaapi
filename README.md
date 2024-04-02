@@ -92,6 +92,7 @@ if check_connect:
 ### Get Candle
 ```python
 from binollapi import Binolla
+import time, datetime
 ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 asset="GBPCAD_otc"
@@ -123,6 +124,7 @@ if check_connect:
 ### History Detail
 ```python
 from binollapi import Binolla
+import datetime
 ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 API =Binolla(host="binolla.com",set_ssid=ssid,weboscket_cookie=weboscket_cookie)
@@ -145,6 +147,7 @@ API.close()
 ### Get Gistory Binolla
 ```python
 from binollapi import Binolla
+import datetime
 ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 API =Binolla(host="binolla.com",set_ssid=ssid,weboscket_cookie=weboscket_cookie)
@@ -173,7 +176,6 @@ ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 API =Binolla(host="binolla.com",set_ssid=ssid,weboscket_cookie=weboscket_cookie)
 check_connect,message=API.connect()
-import time
 if check_connect:
     asset="NZDUSD_otc"
     list_size=10#this is setting how much Binolla you want to save
@@ -192,7 +194,6 @@ ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 API =Binolla(host="binolla.com",set_ssid=ssid,weboscket_cookie=weboscket_cookie)
 check_connect,message=API.connect()
-import time
 check_connect, message=API.connect()
 if check_connect:
     all_data=account.get_payment()
@@ -209,7 +210,6 @@ ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 API =Binolla(host="binolla.com",set_ssid=ssid,weboscket_cookie=weboscket_cookie)
 check_connect,message=API.connect()
-import time
 check_connect, message=API.connect()
 if check_connect:
     raw_asset = API.get_all_asset_name()
