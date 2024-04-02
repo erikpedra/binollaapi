@@ -193,7 +193,6 @@ from binollapi import Binolla
 ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 API =Binolla(host="binolla.com",set_ssid=ssid,weboscket_cookie=weboscket_cookie)
-check_connect,message=API.connect()
 check_connect, message=API.connect()
 if check_connect:
     all_data=account.get_payment()
@@ -209,7 +208,6 @@ from binollapi import Binolla
 ssid = "your ssid"
 weboscket_cookie = "websocket cookie"
 API =Binolla(host="binolla.com",set_ssid=ssid,weboscket_cookie=weboscket_cookie)
-check_connect,message=API.connect()
 check_connect, message=API.connect()
 if check_connect:
     raw_asset = API.get_all_asset_name()
